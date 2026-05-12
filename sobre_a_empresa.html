@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sobre a Empresa | Hightech.Company</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7fb;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header{
+            background: linear-gradient(90deg, #0d47a1, #1976d2);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1{
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        header p{
+            max-width: 900px;
+            margin: auto;
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+        main{
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .card{
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+
+        .card h2{
+            color: #0d47a1;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .card p{
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #444;
+        }
+
+        .destaque{
+            color: #1976d2;
+            font-weight: bold;
+        }
+
+        .acessibilidade{
+            background: linear-gradient(135deg, #e3f2fd, #ffffff);
+            border-left: 6px solid #1976d2;
+        }
+
+        .lista{
+            margin-top: 20px;
+        }
+
+        .lista ul{
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .lista li{
+            background-color: #1976d2;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .lista li:hover{
+            transform: translateY(-5px);
+            background-color: #0d47a1;
+        }
+
+        .botoes{
+            margin-top: 25px;
+        }
+
+        .btn{
+            display: inline-block;
+            padding: 14px 24px;
+            background-color: #1976d2;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .btn:hover{
+            background-color: #0d47a1;
+        }
+
+        nav{
+            background-color: #0d47a1;
+            padding: 18px;
+            margin-top: 40px;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover{
+            color: #90caf9;
+        }
+
+        footer{
+            background-color: #062b63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px){
+
+            header h1{
+                font-size: 32px;
+            }
+
+            header p{
+                font-size: 16px;
+            }
+
+            .card h2{
+                font-size: 26px;
+            }
+
+            .card p{
+                font-size: 16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Objetivos da Nossa Companhia</h1>
+
+        <p>
+            Fundada em 2010, a Hightech.Company acredita que transparência,
+            inovação e compromisso são os pilares que sustentam nossa trajetória
+            e fortalecem a relação com nossos clientes e colaboradores.
+        </p>
+
+    </header>
+
+    <main>
+
+        <section class="card">
+
+            <h2>Nossa Cultura Organizacional</h2>
+
+            <p>
+                Nossos objetivos estão sempre alinhados com a missão da empresa,
+                buscando excelência em nossos serviços e máxima satisfação dos clientes.
+            </p>
+
+            <p>
+                O grande diferencial da
+                <span class="destaque">Hightech.Company</span>
+                é a relação de confiança construída com nossos colaboradores,
+                permitindo uma equipe altamente motivada e comprometida com resultados.
+            </p>
+
+            <p>
+                Estamos comprometidos em criar um ambiente de trabalho inclusivo,
+                acolhedor e preparado para o desenvolvimento contínuo de todos.
+            </p>
+
+        </section>
+
+        <section class="card acessibilidade">
+
+            <h2>Acessibilidade e Inclusão</h2>
+
+            <p>
+                Nosso maior orgulho é promover acessibilidade em todos os espaços da empresa.
+                Acreditamos que a tecnologia deve ser acessível para todos,
+                independentemente de suas necessidades.
+            </p>
+
+            <p>
+                Nosso centro de operações conta com piso tátil, rampas de acesso,
+                equipamentos adaptados e infraestrutura inclusiva,
+                proporcionando conforto, segurança e igualdade.
+            </p>
+
+            <div class="botoes">
+                <a href="contato.html" class="btn">
+                    Fale Conosco
+                </a>
+            </div>
+
+        </section>
+
+        <section class="lista">
+
+            <ul>
+
+                <li>Excelência em Serviços</li>
+
+                <li>Satisfação do Cliente</li>
+
+                <li>Inovação Contínua</li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <nav>
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre_a_empresa.html">Sobre a Empresa</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+    </nav>
+
+    <footer>
+        © 2026 Hightech.Company - Todos os direitos reservados.
+    </footer>
+
+</body>
+
+</html>
