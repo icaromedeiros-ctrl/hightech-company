@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato | Hightech.Company</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header{
+            background: linear-gradient(90deg, #0d47a1, #1976d2);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1{
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p{
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+        main{
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .card{
+            background-color: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        }
+
+        .card h2{
+            color: #0d47a1;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        label{
+            font-weight: bold;
+            color: #444;
+        }
+
+        input,
+        textarea{
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus,
+        textarea:focus{
+            border-color: #1976d2;
+            box-shadow: 0 0 8px rgba(25,118,210,0.2);
+        }
+
+        textarea{
+            resize: none;
+            height: 150px;
+        }
+
+        button{
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background-color: #0d47a1;
+        }
+
+        .info ul{
+            list-style: none;
+        }
+
+        .info li{
+            margin-bottom: 18px;
+            padding: 15px;
+            background-color: #f4f7fb;
+            border-radius: 10px;
+            border-left: 5px solid #1976d2;
+        }
+
+        .info strong{
+            color: #0d47a1;
+        }
+
+        .social{
+            margin-top: 25px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .social a{
+            text-decoration: none;
+            background-color: #1976d2;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 10px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .social a:hover{
+            background-color: #0d47a1;
+        }
+
+        nav{
+            background-color: #0d47a1;
+            padding: 18px;
+            margin-top: 50px;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover{
+            color: #90caf9;
+        }
+
+        footer{
+            background-color: #062b63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px){
+
+            header h1{
+                font-size: 32px;
+            }
+
+            header p{
+                font-size: 16px;
+            }
+
+            .card h2{
+                font-size: 26px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Entre em Contato</h1>
+
+        <p>
+            Estamos prontos para atender você e oferecer as melhores soluções tecnológicas.
+        </p>
+
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <section class="card">
+
+                <h2>Envie sua Mensagem</h2>
+
+                <form>
+
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome"
+                        placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email"
+                        placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem"
+                        placeholder="Digite sua mensagem" required></textarea>
+                    </div>
+
+                    <button type="submit">
+                        Enviar Mensagem
+                    </button>
+
+                </form>
+
+            </section>
+
+            <section class="card info">
+
+                <h2>Informações de Contato</h2>
+
+                <ul>
+
+                    <li>
+                        <strong>Telefone:</strong><br>
+                        (11) 1234-5678
+                    </li>
+
+                    <li>
+                        <strong>E-mail:</strong><br>
+                        contato@hightechcompany.com
+                    </li>
+
+                    <li>
+                        <strong>Endereço:</strong><br>
+                        Rua Exemplo, 123 - São Paulo/SP
+                    </li>
+
+                    <li>
+                        <strong>Funcionamento:</strong><br>
+                        Segunda a Sexta - 09h às 18h
+                    </li>
+
+                </ul>
+
+                <div class="social">
+
+                    <a href="#">
+                        WhatsApp
+                    </a>
+
+                    <a href="#">
+                        Instagram
+                    </a>
+
+                    <a href="#">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <nav>
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre_a_empresa.html">Sobre a Empresa</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+    </nav>
+
+    <footer>
+        © 2026 Hightech.Company - Todos os direitos reservados.
+    </footer>
+
+</body>
+
+</html>

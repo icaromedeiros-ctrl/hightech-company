@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Equipe | Hightech.Company</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header{
+            background: linear-gradient(90deg, #0d47a1, #1976d2);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1{
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        header p{
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+        main{
+            max-width: 1300px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .equipe-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card{
+            background-color: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            transition: 0.4s;
+        }
+
+        .card:hover{
+            transform: translateY(-10px);
+        }
+
+        .card img{
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .card-content{
+            padding: 25px;
+        }
+
+        .card-content h2{
+            color: #0d47a1;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        .card-content p{
+            color: #555;
+            font-size: 16px;
+        }
+
+        .destaque{
+            margin-top: 15px;
+            color: #6a1b9a;
+            font-weight: bold;
+        }
+
+        .botoes{
+            margin-top: 20px;
+        }
+
+        .btn{
+            display: inline-block;
+            padding: 12px 22px;
+            background-color: #1976d2;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover{
+            background-color: #0d47a1;
+        }
+
+        .valores{
+            margin-top: 60px;
+            background-color: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .valores h2{
+            color: #0d47a1;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .valores p{
+            max-width: 900px;
+            margin: auto;
+            color: #555;
+            font-size: 18px;
+        }
+
+        nav{
+            background-color: #0d47a1;
+            padding: 18px;
+            margin-top: 50px;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover{
+            color: #90caf9;
+        }
+
+        footer{
+            background-color: #062b63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px){
+
+            header h1{
+                font-size: 32px;
+            }
+
+            header p{
+                font-size: 16px;
+            }
+
+            .card-content h2{
+                font-size: 24px;
+            }
+
+            .valores h2{
+                font-size: 26px;
+            }
+
+            .valores p{
+                font-size: 16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Nossa Equipe</h1>
+
+        <p>
+            Conheça os profissionais responsáveis por transformar inovação em resultados.
+        </p>
+
+    </header>
+
+    <main>
+
+        <section class="equipe-container">
+
+            <div class="card">
+
+                <img src="Ana.Beatriz- Analista.de.dados.jpg"
+                alt="Ana Beatriz - Analista de Sistemas">
+
+                <div class="card-content">
+
+                    <h2>Ana Beatriz</h2>
+
+                    <p>
+                        Analista de sistemas com 5 anos de experiência em desenvolvimento web,
+                        focada em inovação, performance e soluções modernas.
+                    </p>
+
+                    <div class="botoes">
+                        <a href="contato.html" class="btn">
+                            Contatar
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Carlos_silva-Desenvolvedor_de_software.jpg"
+                alt="Carlos Silva - Desenvolvedor Full Stack">
+
+                <div class="card-content">
+
+                    <h2>Carlos Silva</h2>
+
+                    <p>
+                        Desenvolvedor Full Stack especializado em tecnologias modernas,
+                        aplicações web e soluções escaláveis.
+                    </p>
+
+                    <div class="botoes">
+                        <a href="contato.html" class="btn">
+                            Contatar
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Thais-Mattos-Designer.jpg"
+                alt="Thais Mattos - Designer Gráfico">
+
+                <div class="card-content">
+
+                    <h2>Thais Mattos</h2>
+
+                    <p>
+                        Designer gráfica com experiência em identidade visual,
+                        interfaces modernas e criatividade estratégica.
+                    </p>
+
+                    <div class="botoes">
+                        <a href="contato.html" class="btn">
+                            Contatar
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Engenheiro.de.software-Kleber.jpg"
+                alt="Kleber Azevedo - Gerente de Projetos">
+
+                <div class="card-content">
+
+                    <h2>Kleber Azevedo</h2>
+
+                    <p>
+                        Gerente de projetos com ampla experiência em liderança,
+                        organização de equipes e entrega de software de alta qualidade.
+                    </p>
+
+                    <p class="destaque">
+                        Exemplo de superação, dedicação e profissionalismo,
+                        mostrando diariamente que talento e competência não possuem limites.
+                    </p>
+
+                    <div class="botoes">
+                        <a href="contato.html" class="btn">
+                            Contatar
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="valores">
+
+            <h2>Nossos Valores</h2>
+
+            <p>
+                Acreditamos que grandes resultados são construídos através de diversidade,
+                inclusão, inovação e colaboração. Nossa equipe trabalha diariamente
+                para oferecer soluções tecnológicas modernas e acessíveis para todos.
+            </p>
+
+        </section>
+
+    </main>
+
+    <nav>
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre_a_empresa.html">Sobre a Empresa</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+    </nav>
+
+    <footer>
+        © 2026 Hightech.Company - Todos os direitos reservados.
+    </footer>
+
+</body>
+
+</html>
